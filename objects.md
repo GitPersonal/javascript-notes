@@ -31,3 +31,31 @@ const macbook = {
 ## Object values
 
 Objects can contain any value that is valid in JavaScript. This means you can store primitives (like Strings and Numbers) and other objects.
+
+```javascript
+const anObject = {
+    string: 'Yay',
+    number: 1,
+    boolean: true,
+    anotherObject:{},
+    aFunction:function(){},
+    anArray:()
+}
+```
+
+## Getting value of a property
+
+Object keys are called **properties**. You can use two methods to get the value of a property.
+
+The first method is through the **dot notation**, where you write the name of the object, followed by **.**, followed by the property name:
+
+```javascript
+const prop = object.property;
+```
+
+If you want to get to the **storage** property of the macbook we declared above, you can write **macbook.storage**.
+
+```javascript
+const macbookStorage = macbook.storage;
+console.log(macbookStorage); // 512gb
+```
